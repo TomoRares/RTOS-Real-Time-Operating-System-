@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "arm-debug",
+      "displayName": "ARM Debug",
+      "description": "ARM Cortex-M4 Debug Build",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-debug",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/arm-toolchain.cmake",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "arm-release",
+      "displayName": "ARM Release",
+      "description": "ARM Cortex-M4 Release Build",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-release",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/arm-toolchain.cmake",
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "arm-debug-build",
+      "configurePreset": "arm-debug"
+    },
+    {
+      "name": "arm-release-build",
+      "configurePreset": "arm-release"
+    }
+  ]
+}
