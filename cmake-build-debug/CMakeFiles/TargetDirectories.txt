@@ -1,0 +1,5 @@
+/Users/tomo/Downloads/itsc/cmake-build-debug/CMakeFiles/rtos.elf.dir
+/Users/tomo/Downloads/itsc/cmake-build-debug/CMakeFiles/run.dir
+/Users/tomo/Downloads/itsc/cmake-build-debug/CMakeFiles/debug.dir
+/Users/tomo/Downloads/itsc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tomo/Downloads/itsc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
